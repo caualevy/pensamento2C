@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,5 +50,39 @@
         <p class="banner_texto">Encontre em nossa estante o que você precisa para o seu desenvolvimento</p>
         <input type="search" class="banner_pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Novos Lançamentos</h2>
+
+    <div class="swiper">
+    <div class="swiper-pagination"></div>
+
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+        <div class="swiper-slide"><img src="Img/Liderança.svg" alt="Livro sobre Liderança"></div>
+        <div class="swiper-slide"><img src="Img/Javascript.svg" alt="Livro sobre Javascript"></div>
+        <div class="swiper-slide"><img src="Img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+        <div class="swiper-slide"><img src="Img/Portugol.svg" alt="Livro sobre Portugol"></div>
+        <div class="swiper-slide"><img src="Img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.spiwer', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    })
+</script>
 </body>
 </html>
