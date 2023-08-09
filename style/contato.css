@@ -32,6 +32,6 @@
 .contato_emai::placeholder{
     font-family: var(--fonte-principal);
     color: var(--azul);
-    background: url(Img/envelope.svg) no-repeat;
+    background: url(../Img/envelope.svg) no-repeat;
     padding-left: 2em;
 }
