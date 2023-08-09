@@ -29,7 +29,7 @@
     color: var(--azul);
 }
 
-.contato_emai::placeholder{
+.contato_email::placeholder{
     font-family: var(--fonte-principal);
     color: var(--azul);
     background: url(../Img/envelope.svg) no-repeat;
